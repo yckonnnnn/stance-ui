@@ -26,10 +26,11 @@ git clone https://github.com/yckonnnnn/stance-ui.git ~/.codex/skills/stance-ui
 
 把整个 `stance-ui` 文件夹放到你的 AI 工具能读取的 skills 目录，或在项目里直接引用 `SKILL.md`。
 
-把下载到的压缩包解压到 AI 工具能读取的 skills 目录：
+如果你从本仓库下载了 ZIP：
 
 ```bash
-unzip stance-ui-open-source.zip -d ~/.codex/skills
+unzip stance-ui-main.zip -d /tmp
+mv /tmp/stance-ui-main ~/.codex/skills/stance-ui
 ```
 
 解压后应得到 `~/.codex/skills/stance-ui/SKILL.md`。Claude Code、Cursor、Windsurf 等工具的目录可能不同，把整个 `stance-ui` 文件夹放到对应 skills 目录即可。也可以直接引用本文件夹里的 `SKILL.md`。
