@@ -1,0 +1,39 @@
+name: validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  skill:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check skill files
+        run: |
+          test -f SKILL.md
+          test -f agents/openai.yaml
+          test -f scripts/verify-install.sh
+          sh scripts/verify-install.sh
+
+      - name: Check frontmatter
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import yaml
+
+          text = Path("SKILL.md").read_text(encoding="utf-8")
+          assert text.startswith("---\n"), "SKILL.md must start with YAML frontmatter"
+          frontmatter = text.split("---", 2)[1]
+          data = yaml.safe_load(frontmatter)
+          assert data["name"] == "stance-ui"
+          assert data["description"].strip()
+
+          config = yaml.safe_load(Path("agents/openai.yaml").read_text(encoding="utf-8"))
+          assert config["interface"]["display_name"] == "主见 UI"
+          assert config["policy"]["allow_implicit_invocation"] is True
+          print("skill metadata is valid")
+          PY
