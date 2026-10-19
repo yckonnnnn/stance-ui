@@ -68,7 +68,7 @@ Use stance-ui to redesign this page.
 ## 关注作者
 
 - GitHub: https://github.com/yckonnnnn
-- 项目仓库发布后可在这里补充公开仓库地址
+- 项目仓库: https://github.com/yckonnnnn/stance-ui
 
 ## 许可
 
