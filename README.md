@@ -13,10 +13,12 @@
 ### 从 GitHub 安装
 
 ```bash
-npx skills add yckonnnnn/stance-ui -g
+npx skills add yckonnnnn/stance-ui
 ```
 
-如果你只使用 Codex：
+这会装到当前项目的 `.agents/skills/stance-ui`，适合每个项目单独使用。
+
+如果你想让所有 Codex 项目都能用：
 
 ```bash
 git clone https://github.com/yckonnnnn/stance-ui.git ~/.codex/skills/stance-ui
