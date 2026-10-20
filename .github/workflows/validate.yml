@@ -21,6 +21,7 @@ jobs:
           test -f references/mobile-apps.md
           test -f references/design-direction.md
           test -f references/style-diversity.md
+          test -f references/quality-floor.md
           test -f references/typography-color.md
           test -f references/layout-components.md
           test -f references/motion.md
