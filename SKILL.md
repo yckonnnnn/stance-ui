@@ -5,7 +5,7 @@ license: MIT
 metadata:
   author: Zack
   homepage: https://zackui.com
-  version: "2.5.0"
+  version: "2.6.0"
 ---
 
 # Zack UI
