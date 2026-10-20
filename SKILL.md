@@ -5,7 +5,7 @@ license: MIT
 metadata:
   author: Zack
   homepage: https://zackui.com
-  version: "2.0.1"
+  version: "2.1.0"
 ---
 
 # Zack UI
@@ -47,6 +47,7 @@ Zack UI 是一套给 AI 编程助手使用的界面设计方法。目标不是�
 - 新建网站、落地页、产品页：读 `references/web-pages.md`。
 - 新建 App、移动端界面：读 `references/mobile-apps.md`。
 - 需要确定视觉方向或做方案比较：读 `references/design-direction.md`。
+- 需要避免作品同质化、轮换视觉语言：读 `references/style-diversity.md`。
 - 字体、字号、颜色、表面层级：读 `references/typography-color.md`。
 - 栅格、间距、卡片、组件与状态：读 `references/layout-components.md`。
 - 动效、过渡和反馈：读 `references/motion.md`。
@@ -70,6 +71,20 @@ Zack UI 是一套给 AI 编程助手使用的界面设计方法。目标不是�
 ### 一个强调色
 
 整页只保留一个主要强调色。它负责主动作、当前状态和一个真正重要的词。其余颜色优先使用中性色和语义状态色。
+
+### 不要复用自己的网站风格
+
+Zack UI 官网的冷白纸感、信号红、硬边框和编辑式排版，是品牌自己的外观，不是生成页面的默认答案。
+
+除非用户明确要求延续这套风格，否则不要自动复用：
+
+- 冷白或暖白纸感背景。
+- 信号红 / 橙色作为默认强调色。
+- 大号衬线标题。
+- 黑色硬边框和编辑式竖线。
+- 深绿或近黑仪表盘配橙色状态。
+
+如果新产出看起来像可以放进 `zackui.com` 的下一张案例卡，但没有品牌理由，说明风格被锚定了，需要重做方向。
 
 ### 不默认模板
 
@@ -132,6 +147,8 @@ Zack UI 是一套给 AI 编程助手使用的界面设计方法。目标不是�
 可用 `assets/direction-board.html` 作为并排比较板的起点。
 
 选定方向后，用一句话写清理由：为什么它最适合这个任务，而不是另外两个。
+
+如果当前任务没有品牌资料，先从 `references/style-diversity.md` 选择与品类匹配的视觉家族，并至少改变三个维度：主色调、字体性格、版式结构、形状语言、材质和动效。不要每套方案都长成同一种“高级编辑风”。
 
 ## 网站怎么做
 
