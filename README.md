@@ -1,41 +1,48 @@
-# Zack UI · 主见 · 开源版
+# Zack UI
 
-由 Zack（[@yckonnnnn](https://github.com/yckonnnnn)）设计、编写和维护。
+**给 AI 编程助手用的界面设计方法。网站、App、后台和组件都能用。**
 
-一套给 AI 编程助手的界面设计方法。它不绑定组件库，不要求固定技术栈，重点解决三件事：
+作者：Zack · [GitHub](https://github.com/yckonnnnn) · [zackui.com](https://zackui.com)
 
-1. 先做三个真正不同的方向，再选一个继续。
-2. 用真实内容建立层级，不靠模板和装饰。
-3. 在真实桌面和手机屏幕里验收，而不是只看代码。
+Zack UI 不绑定组件库，也不替你决定品牌。它先迫使 AI 做判断，再让视觉形式服务于真实任务。
+
+## 解决什么
+
+- 新网站从零没有方向。
+- App 做出来像压窄的网页。
+- 页面到处都是 AI 默认套路。
+- 组件只有成功状态。
+- 代码写完没有在真实桌面和手机上验收。
+- 改版时不知道应该整理、升级还是改流程。
+
+## 里面有什么
+
+- 网页、落地页、产品页、定价页和内容站方法。
+- App 核心循环、导航、移动端布局和状态。
+- 三个真正不同的设计方向，而不是三套颜色。
+- 字体、颜色、栅格、间距和组件规则。
+- 动效决策与时长。
+- 真实桌面、手机和 200% 细节验收。
+- 可直接复制的网站、App、改版和组件提示词。
+- 一个可打开的并排方向板。
 
 ## 安装
 
-### 从 GitHub 安装
+### 当前项目
 
 ```bash
 npx skills add yckonnnnn/zack-ui
 ```
 
-这会装到当前项目的 `.agents/skills/zack-ui`，适合每个项目单独使用。
+会装到项目的 `.agents/skills/zack-ui`。
 
-如果你想让所有 Codex 项目都能用：
+### 所有 Codex 项目
 
 ```bash
 git clone https://github.com/yckonnnnn/zack-ui.git ~/.codex/skills/zack-ui
 ```
 
-### 手动安装
-
-把整个 `zack-ui` 文件夹放到你的 AI 工具能读取的 skills 目录，或在项目里直接引用 `SKILL.md`。
-
-如果你从本仓库下载了 ZIP：
-
-```bash
-unzip zack-ui-main.zip -d /tmp
-mv /tmp/zack-ui-main ~/.codex/skills/zack-ui
-```
-
-解压后应得到 `~/.codex/skills/zack-ui/SKILL.md`。Claude Code、Cursor、Windsurf 等工具的目录可能不同，把整个 `zack-ui` 文件夹放到对应 skills 目录即可。也可以直接引用本文件夹里的 `SKILL.md`。
+Claude Code、Cursor、Windsurf 等工具的 skills 目录可能不同。把整个 `zack-ui` 文件夹放进去即可。
 
 ## 确认安装成功
 
@@ -43,35 +50,77 @@ mv /tmp/zack-ui-main ~/.codex/skills/zack-ui
 sh ~/.codex/skills/zack-ui/scripts/verify-install.sh
 ```
 
-看到 `Install looks valid.` 就说明目录和技能文件都在正确位置。然后新开一个 AI 会话，输入：
+看到 `Install looks valid.` 后，新开一个 AI 会话，输入：
 
 ```text
-Use zack-ui to redesign this page.
+Use zack-ui to design this page.
 ```
 
-## 使用
+## 直接使用
 
-给 AI 一个真实任务，不要只说“做得高级一点”。
+新网站：
 
 ```text
-用 Zack UI 重新设计这个产品的首页。
-先读现有页面和样式，不要直接改。
-先给我三个明显不同的方向，用真实文案做成可打开的小样。
-我选定后，完成整页，并在 1440px 和 390px 下检查。
-检查完列出你发现的具体问题，再修一轮。
+用 Zack UI 设计这个产品的官网首页。
+先读真实产品、用户和现有内容，不要直接写页面。
+先给我三个明显不同的方向，每个方向只做首屏。
+说明各自适合什么，我选定后再完成整页。
+最后在 1440px 和 390px 下打开检查。
 ```
 
-## 开源版和 Pro 的区别
+新 App：
 
-开源版覆盖方向、结构、去 AI 味和基础验收。Pro 版增加完整交互状态、已有项目改造、控制台布局、组件精修、多轮评审和交付前减法。
+```text
+用 Zack UI 设计这个 App 的核心三屏。
+先写清核心循环、导航模型和主要动作。
+先给我三套不同的首页方向，再做详情和结果页。
+补齐空、加载、错误和成功状态。
+最后按 390×844 检查真实操作。
+```
 
-详细对比见网站 `pro.html`。
+## 目录
 
-## 关注作者
+```text
+zack-ui/
+  SKILL.md
+  README.md
+  agents/openai.yaml
+  references/
+    web-pages.md
+    mobile-apps.md
+    design-direction.md
+    typography-color.md
+    layout-components.md
+    motion.md
+    review.md
+    prompts.md
+  assets/
+    direction-board.html
+  scripts/
+    verify-install.sh
+```
 
-- GitHub: https://github.com/yckonnnnn
-- 项目仓库: https://github.com/yckonnnnn/zack-ui
+## 边界
+
+Zack UI 改善的是设计过程和判断，不保证任何模型都产出同样质量。
+
+结果仍然取决于：
+
+- 模型的视觉能力。
+- 需求是否清楚。
+- 是否有真实内容。
+- 是否真的打开页面检查。
+
+如果用户只要求评审，技能不会直接改代码。
+
+## 开源版和 Pro
+
+开源版覆盖方向、网页、App、组件、动效和基础验收。
+
+Pro 版增加已有项目改造、完整交互规格、复杂工作台、多轮视觉复检、单组件深修、交付规格和真实任务清单。
+
+详细区别见 [zackui.com/pro](https://zackui.com/pro)。
 
 ## 许可
 
-MIT。可以用于个人和商业项目，可以修改和再分发。保留版权声明即可。
+MIT。可以用于个人和商业项目，可以修改和再分发。保留版权与许可声明。

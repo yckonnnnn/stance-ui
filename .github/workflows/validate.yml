@@ -17,6 +17,15 @@ jobs:
           test -f SKILL.md
           test -f agents/openai.yaml
           test -f scripts/verify-install.sh
+          test -f references/web-pages.md
+          test -f references/mobile-apps.md
+          test -f references/design-direction.md
+          test -f references/typography-color.md
+          test -f references/layout-components.md
+          test -f references/motion.md
+          test -f references/review.md
+          test -f references/prompts.md
+          test -f assets/direction-board.html
           sh scripts/verify-install.sh
 
       - name: Check frontmatter
