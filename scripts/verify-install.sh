@@ -6,7 +6,7 @@ SKILL_DIR=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
 
 echo "Checking: $SKILL_DIR"
 
-for file in SKILL.md agents/openai.yaml references/web-pages.md references/mobile-apps.md references/style-diversity.md references/quality-floor.md assets/direction-board.html; do
+for file in SKILL.md agents/openai.yaml references/web-pages.md references/mobile-apps.md references/style-diversity.md references/quality-floor.md references/typography-precision.md assets/direction-board.html; do
   if [ ! -f "$SKILL_DIR/$file" ]; then
     echo "Missing: $file"
     exit 1

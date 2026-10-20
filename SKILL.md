@@ -5,7 +5,7 @@ license: MIT
 metadata:
   author: Zack
   homepage: https://zackui.com
-  version: "2.4.0"
+  version: "2.5.0"
 ---
 
 # Zack UI
@@ -50,6 +50,7 @@ Zack UI 是一套给 AI 编程助手使用的界面设计方法。目标不是�
 - 需要避免作品同质化、轮换视觉语言：读 `references/style-diversity.md`。
 - 需要达到明确的设计质量下限：读 `references/quality-floor.md`。
 - 字体、字号、颜色、表面层级：读 `references/typography-color.md`。
+- 需要把字体、数字、换行和中英混排做到可交付精度：读 `references/typography-precision.md`。
 - 栅格、间距、卡片、组件与状态：读 `references/layout-components.md`。
 - 动效、过渡和反馈：读 `references/motion.md`。
 - 做真实屏幕验收：读 `references/review.md`。
@@ -68,6 +69,17 @@ Zack UI 是一套给 AI 编程助手使用的界面设计方法。目标不是�
 ### 先黑白，再上色
 
 先用字号、字重、留白、对齐和间距建立层级。把页面转成黑白仍然能读通，再添加颜色。
+
+### 字体必须有精度
+
+字体不只是风格。标题换行、正文行高、数字对齐、标签克制和中英混排都必须成立。
+
+公开页面的字体盲评门槛：
+
+- 达到 9.2/10，或
+- 至少比同类参考高 0.3。
+
+达不到时，不发布。
 
 ### 一个强调色
 
