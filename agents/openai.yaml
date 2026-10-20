@@ -1,6 +1,6 @@
 interface:
-  display_name: "主见 UI"
+  display_name: "Zack UI"
   short_description: "让 AI 先做设计判断，再做页面并在真实屏幕上验收"
-  default_prompt: "Use $stance-ui to design this interface. Read the real content first, propose three distinct directions, then build one and verify it at desktop and mobile sizes."
+  default_prompt: "Use $zack-ui to design this interface. Read the real content first, propose three distinct directions, then build one and verify it at desktop and mobile sizes."
 policy:
   allow_implicit_invocation: true

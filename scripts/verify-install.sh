@@ -18,10 +18,10 @@ if ! head -n 1 "$SKILL_DIR/SKILL.md" | grep -q '^---$'; then
   exit 1
 fi
 
-if ! grep -q '^name: stance-ui$' "$SKILL_DIR/SKILL.md"; then
+if ! grep -q '^name: zack-ui$' "$SKILL_DIR/SKILL.md"; then
   echo "SKILL.md has the wrong skill name"
   exit 1
 fi
 
 echo "Install looks valid."
-echo "Open a new agent session and ask: Use stance-ui to redesign this page."
+echo "Open a new agent session and ask: Use zack-ui to redesign this page."

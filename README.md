@@ -1,4 +1,4 @@
-# 主见 UI / STANCE · 开源版
+# Zack UI · 主见 · 开源版
 
 由 Zack（[@yckonnnnn](https://github.com/yckonnnnn)）设计、编写和维护。
 
@@ -13,40 +13,40 @@
 ### 从 GitHub 安装
 
 ```bash
-npx skills add yckonnnnn/stance-ui
+npx skills add yckonnnnn/zack-ui
 ```
 
-这会装到当前项目的 `.agents/skills/stance-ui`，适合每个项目单独使用。
+这会装到当前项目的 `.agents/skills/zack-ui`，适合每个项目单独使用。
 
 如果你想让所有 Codex 项目都能用：
 
 ```bash
-git clone https://github.com/yckonnnnn/stance-ui.git ~/.codex/skills/stance-ui
+git clone https://github.com/yckonnnnn/zack-ui.git ~/.codex/skills/zack-ui
 ```
 
 ### 手动安装
 
-把整个 `stance-ui` 文件夹放到你的 AI 工具能读取的 skills 目录，或在项目里直接引用 `SKILL.md`。
+把整个 `zack-ui` 文件夹放到你的 AI 工具能读取的 skills 目录，或在项目里直接引用 `SKILL.md`。
 
 如果你从本仓库下载了 ZIP：
 
 ```bash
-unzip stance-ui-main.zip -d /tmp
-mv /tmp/stance-ui-main ~/.codex/skills/stance-ui
+unzip zack-ui-main.zip -d /tmp
+mv /tmp/zack-ui-main ~/.codex/skills/zack-ui
 ```
 
-解压后应得到 `~/.codex/skills/stance-ui/SKILL.md`。Claude Code、Cursor、Windsurf 等工具的目录可能不同，把整个 `stance-ui` 文件夹放到对应 skills 目录即可。也可以直接引用本文件夹里的 `SKILL.md`。
+解压后应得到 `~/.codex/skills/zack-ui/SKILL.md`。Claude Code、Cursor、Windsurf 等工具的目录可能不同，把整个 `zack-ui` 文件夹放到对应 skills 目录即可。也可以直接引用本文件夹里的 `SKILL.md`。
 
 ## 确认安装成功
 
 ```bash
-sh ~/.codex/skills/stance-ui/scripts/verify-install.sh
+sh ~/.codex/skills/zack-ui/scripts/verify-install.sh
 ```
 
 看到 `Install looks valid.` 就说明目录和技能文件都在正确位置。然后新开一个 AI 会话，输入：
 
 ```text
-Use stance-ui to redesign this page.
+Use zack-ui to redesign this page.
 ```
 
 ## 使用
@@ -54,7 +54,7 @@ Use stance-ui to redesign this page.
 给 AI 一个真实任务，不要只说“做得高级一点”。
 
 ```text
-用主见 UI 重新设计这个产品的首页。
+用 Zack UI 重新设计这个产品的首页。
 先读现有页面和样式，不要直接改。
 先给我三个明显不同的方向，用真实文案做成可打开的小样。
 我选定后，完成整页，并在 1440px 和 390px 下检查。
@@ -70,7 +70,7 @@ Use stance-ui to redesign this page.
 ## 关注作者
 
 - GitHub: https://github.com/yckonnnnn
-- 项目仓库: https://github.com/yckonnnnn/stance-ui
+- 项目仓库: https://github.com/yckonnnnn/zack-ui
 
 ## 许可
 

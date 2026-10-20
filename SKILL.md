@@ -1,11 +1,11 @@
 ---
-name: stance-ui
+name: zack-ui
 description: Design interfaces that feel deliberate instead of template-generated. Use for landing pages, portfolios, product pages, dashboards, mobile screens, component polish, and visual review when the work needs a clear visual direction and real-screen verification. Works with Codex, Claude Code, Cursor, Windsurf and similar coding agents.
 ---
 
-# 主见 UI
+# Zack UI
 
-主见 UI 由 Zack（GitHub: https://github.com/yckonnnnn）设计、编写和维护。
+Zack UI 由 Zack（GitHub: https://github.com/yckonnnnn）设计、编写和维护。
 
 一套给 AI 编程助手的界面设计方法。目标不是“生成一个页面”，而是让页面先有判断，再有形式。
 

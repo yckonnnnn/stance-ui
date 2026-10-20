@@ -29,11 +29,11 @@ jobs:
           assert text.startswith("---\n"), "SKILL.md must start with YAML frontmatter"
           frontmatter = text.split("---", 2)[1]
           data = yaml.safe_load(frontmatter)
-          assert data["name"] == "stance-ui"
+          assert data["name"] == "zack-ui"
           assert data["description"].strip()
 
           config = yaml.safe_load(Path("agents/openai.yaml").read_text(encoding="utf-8"))
-          assert config["interface"]["display_name"] == "主见 UI"
+          assert config["interface"]["display_name"] == "Zack UI"
           assert config["policy"]["allow_implicit_invocation"] is True
           print("skill metadata is valid")
           PY
